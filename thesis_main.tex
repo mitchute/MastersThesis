@@ -1,0 +1,111 @@
+\documentclass[12pt]{osuthesis}
+\usepackage{graphicx}
+%\usepackage[draft]{graphicx}
+\usepackage{subfig}
+\usepackage{natbib}
+%\usepackage{verbatim}
+%\usepackage{enumerate}
+\usepackage{amsmath}
+%\usepackage{amscd}
+%\usepackage{eqnarray}
+\usepackage{color}
+%\usepackage{amsxtra}
+%\usepackage{amstext}
+%\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[colorlinks,citecolor=Black,linkcolor=Black,urlcolor=Black,filecolor=Black]{hyperref}
+%\usepackage[all]{hypcap}
+%\usepackage{mathrsfs}
+%\usepackage{latexsym}
+\usepackage{multirow}
+\usepackage{tabularx}
+%\usepackage{newlfont}
+%\usepackage{indentfirst,color}
+%\usepackage{doublespace}
+%\usepackage{nomencl}
+\usepackage{float}
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+
+%\execute{makeindex thesis_main.nlo -s nomencl.ist -o thesis_main.nls}
+%\makenomenclature
+
+\graphicspath{{Introduction/Figures/}{Exp_Method/Figures/}{Exp_Results/Figures/}{Design_Tools/Figures/}{Correlations/Figures/}{Conclusion/Figures/}}
+%
+\suppressfloats %\nofiles
+
+\title{EXPERIMENTAL INVESTIGATION AND DESIGN TOOL DEVELOPMENT FOR SURFACE WATER HEAT PUMP SYSTEMS}
+
+\formattedtitle{EXPERIMENTAL INVESTIGATIONS AND DESIGN TOOL DEVELOPMENT FOR SURFACE WATER HEAT PUMP SYSTEMS}
+
+\author{MATT SANDY MITCHELL}
+
+\degreeone{\ssp Bachelor of Science in Mechanical Engineering \\
+        Brigham Young University---Idaho\\
+        Rexburg, Idaho\\
+        2010}
+\degreetwo{}
+\degreesought{MASTER OF SCIENCE}
+\degreedate{May, 2014}
+\majorfield{Mechanical Engineering}
+%
+\begin{document}
+\maketitle
+%\makecopyright
+\makeapproval{4} % Number denotes total number of required signatures, Committee+Dean
+\begin{acknowledge}
+	\input{Acknowledge/acknowledge}
+\end{acknowledge}
+
+\renewcommand{\thepage}{\roman{page}}
+
+
+% Creates abstract
+\begin{abstract}{MATT SANDY MITCHELL}{MAY, 2014}{MECHANICAL AND AEROSPACE ENGINEERING}
+    \input{Abstract/abstract}
+\end{abstract}
+
+{\msp
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+}
+
+\input{Notation/Notation}
+
+%\msp    %========  single space text.
+        %========  For the final version, this command should not be used.
+
+%\makeapproval{5}\addtocounter{placeholder}{-1}    %% Comment this in the final copy. This is for electronic copy
+
+%====================== main  body of the dissertation ==========================
+\pagenumbering{arabic}\setcounter{page}{1}
+
+\input{Introduction/Intro}
+%
+\input{Exp_Method/Exp_Method}
+%
+\input{Exp_Results/Exp_Results}
+%
+\input{Correlations/Correlations}
+%
+\input{Design_Tools/Design_Tools}
+%
+\input{Conclusion/Conclusion}
+
+%\nocite{*} % Use to cite all entries in *.bib file
+\bibliography{References/references}
+\bibliographystyle{agsm}%{alpha}%{ieeetr}%%apsr%agsm
+
+%\input{Appendix/appendix}
+\input{Vita/vita}
+%       \pagestyle{empty}
+
+\end{document}

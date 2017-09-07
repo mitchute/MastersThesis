@@ -1,0 +1,175 @@
+
+%%====================== nomenclature -- must be customized here ===================
+%% ==== Redefine the command called for sorting the nomenclature 
+%\renewcommand{\nomgroup}[1]
+%	{%
+%	 \ifthenelse{\equal{#1}{R}}{\vspace{0.3cm}\item[\textbf{Variables}]}{
+%	  \ifthenelse{\equal{#1}{G}}{\vspace{0.3cm}\item[\textbf{Greek Symbols}]}{
+%	   \ifthenelse{\equal{#1}{B}}{\vspace{0.3cm}\item[\textbf{Subscripts/Superscripts}]}{
+%	   }
+%	  }
+%	 }
+%	}
+%% ==== Redefine the length between items in the nomenclature
+%\setlength{\nomitemsep}{-\parsep}
+%% ==== Redefine the page to be roman numerals
+%\renewcommand{\thepage}{\roman{page}}
+%% ==== Set the value of page to the value of placeholder...which is apparently 
+%%      passed from the previous environment
+%\setcounter{page}{\value{placeholder}}
+%% ==== Redefine the nomenclature name to be more inline with other dissertation environments
+%{\centering \ssp \rule{0in}{1in} \par
+%    NOMENCLATURE \par
+%    \vspace*{0.25in} \par \dsp}
+%% ==== Add a preamble statement to the nomenclature
+%%\renewcommand{\nompreamble}{The following is a list of symbols, variables, and scripts used in this work which may not be defined as they are encountered in the body.}
+%% ==== Redefine the nomenclature label to have trailing dots filling up the box	
+%\renewcommand{\nomlabel}[1]{#1\nobreakspace\dotfill}
+%% ==== Print the nomenclature to the pdf
+%{\ssp \printnomenclature[0.75in]}
+%
+%
+\begin{nomenclature}
+\setcounter{page}{\value{placeholder}}
+%*************ACRONYMS**********************
+
+	\renewcommand{\arraystretch}{0.55}
+	\begin{tabular}{p{2cm} p{12cm}}
+		\multicolumn{2}{l}{\textbf{\textit{Acronyms/Abbreviations}}} \\
+		dia. \dotfill & Diameter\\
+		ft.\ \dotfill & Feet \\
+		GHX \dotfill & Ground heat exchanger\\
+		gpm \dotfill & Gallons per minute \\
+		H \dotfill & Horizontal\\
+		HDPE \dotfill & High density polyethylene \\
+		in.\ \dotfill & inch \\
+		lb \dotfill & Pound\\
+		MBTUh \dotfill & 1,000 British Thermal Units \\
+		N \dotfill & Newton\\
+		PG \dotfill & Propylene Glycol \\
+		SDR \dotfill & Standard diameter ratio \\
+		SWC \dotfill & Surface water cooling\\
+		SWHE \dotfill & Surface water heat exchanger\\
+		SWHP \dotfill & Surface water heat pump\\
+		TEHDPE \dotfill & Thermally enhanced high density polyethylene\\
+		V \dotfill & Vertical\\
+		
+		& \\
+%*************VARIABLES**********************
+
+		\multicolumn{2}{l}{\textbf{\textit{Variables}}} \\
+		$A$ \dotfill & Area ($\mbox{ft}^2$) [m$^2$] \\
+		A \dotfill & Coefficent for \cite{SteinhartHart1968} equation \\
+		B \dotfill & Coefficent for \cite{SteinhartHart1968} equation \\
+		C \dotfill & Coefficent for \cite{SteinhartHart1968} equation \\
+		D \dotfill & Coefficent for \cite{SteinhartHart1968} equation \\
+		$c_p$ \dotfill & Constant pressure specific heat ($\mbox{BTU}/\mbox{ft}^2 \mbox{-}^\circ$F) [$J/kg K$] \\
+		$\Delta x$ \dotfill & Horizontal tube-tube spacing from center-center (in.) [mm] \\
+		$\Delta y$ \dotfill & Vertical tube-tube spacing from center-center (in.) [mm] \\
+		$Err$ \dotfill & Error \\
+		$F$ \dotfill & Any function of multiple variables \\
+		$g$ \dotfill & Gravity (ft/$\mbox{s}^2$) [$m/s^2$]\\
+		$k$ \dotfill & Thermal conductivity ($\mbox{BTU}/\mbox{hr-ft-}^\circ$F) [$W/m K$] \\
+		$\dot{m}$ \dotfill & Mass flow rate (lb./s) [$kg/s$] \\
+		$L$ \dotfill & Total tube length (ft) [m] \\
+		N \dotfill & Number \\
+		NTU \dotfill & Number of heat transfer units \\
+		Nu \dotfill & Nusselt number \\
+		Pr \dotfill & Prandtl number \\
+		$\dot{q}$ \dotfill & Heat flux ($\mbox{BTU}/\mbox{hr-ft}^2$) [$W/m^2$]\\
+		$\dot{Q}$ \dotfill & Heat transfer rate (BTU/hr) [$W$]\\
+		\end{tabular}
+		
+		\begin{tabular}{p{2cm} p{12cm}}
+		$R$ \dotfill & Thermal resistance ($ft^2\mbox{-hr-}^\circ\mbox{F}/\mbox{BTU}$) [$m^2K/W$] \\
+		$\mbox{Ra}^*$ \dotfill & Modified Rayleigh number \\
+		Re \dotfill & Reynolds number \\
+		$t$ \dotfill & Tube wall thickness \\
+		$T$ \dotfill & Temperature ($^\circ$F) [$^\circ$C] \\
+		$U$ \dotfill & Overall heat transfer coefficient ($\mbox{BTU}/\mbox{ft}^2\mbox{-hr-}^\circ\mbox{F}$) [$W/m^2K$] \\
+		$U$ \dotfill & Experimental uncertainty \\
+		$w$ \dotfill & Independent uncertainty variable \\
+		$x$ \dotfill & Position along the tube \\
+		& Function dependent variable \\
+		& \\
+
+%***********Greek Symbols********************
+
+		\multicolumn{2}{l}{\textbf{\textit{Greek Symbols}}} \\
+		$\beta$ \dotfill & Volumetric coefficient of thermal expansion ($1/^\circ \mbox{F}$) [$1/K$]\\
+%		$\beta_1$ \dotfill & Data weighting coefficient 1 \\
+%		$\beta_2$ \dotfill & Data weighting coefficient 2 \\
+		$\partial$ \dotfill & Partial derivative \\
+		$\Delta$ \dotfill & Difference \\
+		$\varepsilon$ \dotfill & Heat exchanger effectiveness \\
+		$\nu$ \dotfill & Kinematic viscosity ($\mbox{ft}^2/s$) [$\mbox{m}^2/s$]\\
+		$\Omega$ \dotfill & Electrical Resistance (Ohms)\\
+		$\pi$ \dotfill & Pi \\
+		$\rho$ \dotfill & Density (lb/$\mbox{ft}^3$) [$kg/m^3$]\\
+		& \\
+		\multicolumn{2}{l}{\textbf{\textit{Subscripts}}} \\
+		$abs$ \dotfill & Absolute Temperature (K)\\
+		$ave$ \dotfill & Average/Mean \\
+		$bot$ \dotfill & Bottom \\
+		$cond$ \dotfill & Conduction \\
+		$conv$ \dotfill & Convection \\
+		$corr$ \dotfill & Correlation \\
+		$D$ \dotfill & Diameter (in.) [mm] \\
+		$f$ \dotfill & Circulating fluid \\
+		$exp$ \dotfill & Experimental \\
+		$film$ \dotfill & Film \\
+		$i$ \dotfill & Inner \\
+		$in$ \dotfill & Inlet \\
+		$lm$ \dotfill & Log-mean \\
+		$max$ \dotfill & Maximum \\
+		$MFT$ \dotfill & Mean fluid temperature \\
+		$meas$ \dotfill & Measured \\
+		$mid$ \dotfill & Middle \\
+		$n$ \dotfill & Indexing variable \\
+		$o$ \dotfill & Outer \\
+		$out$ \dotfill & Outlet \\
+		$p$ \dotfill & Pipe \\
+		$s$ \dotfill & Surface \\
+		$top$ \dotfill & Top \\
+		$tot$ \dotfill & Total \\
+		$sw$ \dotfill & Surface water\\	
+	\end{tabular}
+
+\end{nomenclature}
+
+\renewcommand{\arraystretch}{0.7}
+
+%\noindent \textbf{\textit{Greek Symbols}}
+%\begin{description}
+%	\ssp
+%	\item[$\beta$]{Volumetric coefficient of thermal expansion}
+%	\item[$\nu$]{Kinematic viscosity}
+%	\item[$\partial$]{Partial derivative}
+%	\item[$\pi$]{Pi}
+%	\item[$\rho$]{Density}
+%	\item[$\varepsilon$]{Heat exchanger effectiveness}
+%\end{description}
+
+%***********Subscripts***********************
+
+%\noindent \textbf{\textit{Subscripts}}
+%\begin{description}
+%	\ssp
+%	\item[$ave$]{Average}
+%	\item[$coil$]{Coil}
+%	\item[$cond$]{Conduction}
+%	\item[$conv$]{Convection}
+%	\item[$D$]{Diameter}
+%	\item[$f$]{Circulating fluid}
+%	\item[$film$]{Film temperature}
+%	\item[$in$]{Inlet}
+%	\item[$i$]{Inner}
+%	\item[$max$]{Maximum}
+%	\item[$n$]{Indexing variable}
+%	\item[$o$]{Outer}
+%	\item[$out$]{Outlet}
+%	\item[$p$]{Pipe}
+%	\item[$s$]{Surface}
+%	\item[$tot$]{Total}
+%	\item[$w$]{Surface water}
+%\end{description}
